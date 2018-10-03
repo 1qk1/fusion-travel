@@ -1,0 +1,77 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.footer {
+  &-links {
+    padding: 4rem 2rem;
+    margin: 0;
+    h5 {
+      margin-bottom: 1.5rem;
+    }
+    li, a, p {
+      color: $gray-700;
+    }
+    a {
+      transition: all 0.15s ease-out;
+    }
+    a:hover {
+      color: $gray-600;
+    }
+    &-about {
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        li {
+          margin-bottom: 0.25rem;
+        }
+      }
+    }
+    &-address,
+    &-contact {
+      p {
+        width: 80%;
+        max-width: 200px;
+      }
+    }
+    &-socials {
+      a {
+        display: inline-block;
+        color: #fff;
+        background-color: $gray-700;
+        width: 32px;
+        height: 32px;
+        margin-right: 0.25rem;
+        margin-bottom: 0.5rem;
+        border-radius: 50%;
+        text-align: center;
+        &:hover {
+          background-color: $gray-600;
+          color: #fff;
+        }
+        &:last-child {
+          background-color: $brand-color;
+          &:hover {
+            background-color: #ec9e16;
+          }
+        }
+      }
+      i {
+        vertical-align: middle;
+        line-height: 32px;
+      }
+    }
+  }
+  &-copyright {
+    p {
+      padding: 1rem 0;
+      text-align: center;
+    }
+  }
+  @media (max-width: 768px) {
+    .col {
+      margin-bottom: 2rem;
+    }
+  }
+}

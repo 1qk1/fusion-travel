@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn-rounded {
+  border-radius: 1000px;
+}
+
+.btn-long {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+// Overrides
+
+.btn {
+  font-weight: 500;
+  color: #fff;
+  &:hover,
+  &:active,
+  &:focus{
+    color: #fff !important;
+  }
+}

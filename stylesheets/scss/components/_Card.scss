@@ -1,0 +1,22 @@
+.Card {
+  display: inline-block;
+  padding: 2rem 3rem;
+  margin: 1rem;
+  // border: 1px solid black;
+  // max-width: 300px;
+  // box-shadow: 0 0 50px rgba($color: #000000, $alpha: 0.04);
+  i {
+    font-size: 3rem;
+    display: inline-block;
+    color: $brand-color;
+    margin-bottom: 1rem;
+  }
+  h5 {
+    margin-bottom: 1rem;
+  }
+  p {
+    color: $gray-600;
+    max-width: 300px;
+    line-height: 1.7;
+  }
+}

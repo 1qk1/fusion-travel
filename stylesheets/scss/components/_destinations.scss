@@ -1,0 +1,48 @@
+.destinations {
+  text-align: center;
+  .section-intro h5 {
+    color: $gray-600;
+  }
+  &-search {
+    font-size: 1.5rem;
+    // width: 100%;
+    // max-width: 600px;
+    margin-bottom: 4rem;
+    display: inline-block;
+    i {
+      font-size: 1.25em;
+    }
+    input {
+      border: none;
+      outline: none;
+      display: inline-block;
+      // width: 100%;
+      // border-bottom: 1px solid #ccc;
+      text-align: center;
+      font-size: 1.12em;
+      &:active,
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .destination-item {
+    // max-width: 30%;
+    margin: 2rem 1rem;
+    position: relative;
+    h2 {
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      // -webkit-text-stroke: 1px $gray-700;
+      text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+    img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.blog {
+  margin-bottom: 6rem;
+  &-posts {
+    padding: 4rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    grid-gap: 4rem;
+    margin-bottom: 2rem;
+    .card {
+      border: none;
+      // overflow: hidden;
+      box-shadow: 0 0 50px rgba($color: #000000, $alpha: 0.05);
+      .img-wrapper a {
+        display: block;
+        height: 100%;
+      }
+      &-body {
+        padding: 1.5rem 2rem;
+        @media (max-width: 1100px){
+          padding: 1rem 1.5rem;
+        }
+      }
+      .card-topic {
+        color: #8b4513;
+      }
+      & > * {
+        flex: 1 1 50%;
+      }
+      a {
+        color: $gray-700;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      p {
+        color: $gray-600;
+      }
+      img {
+        object-fit: cover;
+        height: 100%;
+        // width: 100%;
+      }
+    }
+    @media (max-width: 992px){
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .card {
+        flex: 0 1 30%;
+        flex-direction: column !important;
+        margin-bottom: 4rem;
+        .card-body {
+          display: block !important;
+          .card-topic,
+          .card-title {
+            margin-bottom: 0.25rem;
+          }
+        }
+        img {
+          height: 200px;
+        }
+      }
+    }
+    @media (max-width: 850px) {
+      .card {
+        flex: 0 1 45%;
+      }
+    }
+    @media (max-width: 600px) {
+      .card {
+        flex: 0 1 80%;
+      }
+    }
+    .blog-one {
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+      .card-body {
+        display: none;
+      }
+    }
+    .blog-two {
+      grid-column: 3 / 4;
+      grid-row: 1 / 3;
+    }
+    .blog-three {
+      grid-column: 4 / 5;
+      grid-row: 1 / 2;
+      .card-body {
+        display: none;
+      }
+    }
+    .blog-four {
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+      flex-direction: row-reverse;
+    }
+    .blog-five {
+      grid-column: 3 / 4;
+      grid-row: 3 / 4;
+      .card-body {
+        display: none;
+      }
+    }
+    .blog-six {
+      grid-column: 4 / 5;
+      grid-row: 2 / 4;
+    }
+  }
+}

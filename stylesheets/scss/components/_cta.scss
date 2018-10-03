@@ -1,0 +1,34 @@
+.cta {
+  background-color: $brand-color;
+  color: #fff;
+  margin-bottom: 6rem;
+  &-action-wrapper {
+    padding: 6rem 2rem;
+    & > * {
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+    }
+    .cta-text h3 {
+      margin-bottom: 0;
+      font-size: 2.5rem;
+      font-weight: 300;
+    }
+    .cta-button {
+      justify-content: flex-end;
+      a {
+        border: 2px solid #fff;
+      }
+    }
+    
+    @media (max-width: 768px){
+      text-align: center;
+      & > div {
+        justify-content: center !important;
+      }
+      .cta-text {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}

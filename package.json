@@ -1,0 +1,14 @@
+{
+  "name": "fusion-travel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "node-sass -w stylesheets/scss/main.scss stylesheets/css/styles.css --output-style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
